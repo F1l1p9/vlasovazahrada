@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>vlasovazahrada.sk - Profesionálne kadernícke služby</title>
+  <title>Vlasová záhrada</title>
+  <link rel="icon" href="favicon.ico" />
   <style>
     * {
       box-sizing: border-box;
@@ -21,7 +22,6 @@
       line-height: 1.6;
     }
 
-    /* === Navigation === */
     nav {
       background-color: #000;
       padding: 15px 20px;
@@ -81,67 +81,22 @@
       margin-bottom: 30px;
     }
 
-    .services p,
     .about p,
+    .services p,
     .contact p {
       background-color: #1e1e1e;
       padding: 15px 20px;
       border-radius: 10px;
       margin-bottom: 20px;
       font-size: 1.05rem;
-      color: #f5f5f5;
-      transition: 
-        color 0.3s ease,
-        text-shadow 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-      cursor: default;
-      box-shadow: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .services p:hover,
     .about p:hover,
+    .services p:hover,
     .contact p:hover {
-      color: #facc15;
-      text-shadow:
-        0 0 8px #facc15,
-        0 0 15px #facc15,
-        0 0 20px #facc15,
-        0 0 30px #facc15;
-      transform: scale(1.07);
-      box-shadow:
-        0 0 10px #facc15,
-        0 0 20px #facc15;
-      z-index: 5;
-    }
-
-    /* Adresa ako špeciálny prvok s väčším efektom */
-    .contact p.address {
-      cursor: pointer;
-      display: inline-block;
-      color: #f5f5f5;
-      box-shadow: none;
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        color 0.3s ease,
-        background-color 0.3s ease,
-        text-shadow 0.3s ease;
-      border-radius: 10px;
-      padding: 15px 20px;
-      background-color: #1e1e1e;
-    }
-
-    .contact p.address:hover {
-      transform: scale(1.12) translateY(-6px);
-      box-shadow:
-        0 8px 25px rgba(250, 204, 21, 0.9),
-        0 0 30px #facc15,
-        0 0 40px #facc15;
-      background-color: #facc15;
-      color: #111;
-      text-shadow: none;
-      z-index: 10;
+      transform: scale(1.03);
+      box-shadow: 0 0 15px #facc15;
     }
 
     .map-section h3 {
@@ -170,29 +125,24 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
     <a href="#about">O nás</a>
     <a href="#services">Naše služby</a>
-    <!-- Galéria zrušená, odkaz odstránený -->
     <a href="#contact">Kontakt</a>
     <a href="#map">Kde nás nájdete</a>
   </nav>
 
-  <!-- Header -->
   <header>
     <h1>Vlasová záhrada</h1>
     <p>Profesionálne kadernícke služby v srdci Prešova</p>
   </header>
 
-  <!-- About -->
   <section id="about" class="about">
     <h2>O nás</h2>
     <p>Vlasová záhrada je miesto, kde sa každý klient cíti výnimočne. Sme kadernícky salón s dlhoročnou praxou, vášňou pre krásu a osobitným prístupom ku každému zákazníkovi.</p>
     <p>Naším cieľom je poskytnúť profesionálne služby, príjemné prostredie a výsledky, ktoré si zamilujete.</p>
   </section>
 
-  <!-- Services -->
   <section id="services" class="services">
     <h2>Naše služby</h2>
     <p>Dámske, pánske a detské strihy</p>
@@ -201,16 +151,12 @@
     <p>Hĺbková regenerácia a ošetrenie vlasov</p>
   </section>
 
-  <!-- Gallery removed -->
-
-  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Kontakt</h2>
-    <p class="address"><strong>Adresa:</strong> Hlavná 105, Prešov</p>
+    <p><strong>Adresa:</strong> Hlavná 105, Prešov</p>
     <p><strong>Telefón:</strong> +421 907 128 249</p>
     <p><strong>Email:</strong> zuzana.cekanova@centrum.sk</p>
 
-    <!-- Map -->
     <div id="map" class="map-section">
       <h3>Kde nás nájdete</h3>
       <iframe
